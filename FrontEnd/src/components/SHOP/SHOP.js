@@ -11,19 +11,19 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 
-import "./FOSS.css";
+import "./SHOP.css";
 
-function FOSS({ title }) {
+function SHOP({ title }) {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [FOSS, setFOSS] = useState([]);
+  const [SHOP, setSHOP] = useState([]);
 
   useEffect(() => {
-    const fetchFOSS = async () => {
+    const fetchSHOP = async () => {
       const response = await fetch("http://127.0.0.1:8000/driver_details/");
       const data = await response.json();
-      setFOSS(data);
+      setSHOP(data);
     };
-    fetchFOSS();
+    fetchSHOP();
   }, []);
 
   const handleMenu = (event) => {
@@ -35,14 +35,14 @@ function FOSS({ title }) {
   };
 
   return (
-    <div className="FOSSHome">
-      <div className="FOSScontainer">
+    <div className="SHOPHome">
+      <div className="SHOPcontainer">
         <div className="MainContent">
-          <div className="FOSSHeading">
-            <p> FOSS Community</p>
+          <div className="SHOPHeading">
+            <p> Sale Your Commodity</p>
           </div>
-          <div className="FOSS-container">
-            {FOSS.map((Bus) => (
+          <div className="SHOP-container">
+            {SHOP.map((Bus) => (
               <div className="Bus-card" key={Bus.id}>
                 <div className="Bus-image-container">
                   <img
@@ -65,4 +65,4 @@ function FOSS({ title }) {
   );
 }
 
-export default FOSS;
+export default SHOP;

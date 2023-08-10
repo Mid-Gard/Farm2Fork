@@ -11,11 +11,11 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 
-import "./Events.css";
+import "./Learn.css";
 
-function Events({ title }) {
+function Learn({ title }) {
   const [anchorEl, setAnchorEl] = useState(null);
-  const [Events, setEvents] = useState([]);
+  const [Learn, setLearn] = useState([]);
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget);
@@ -26,20 +26,20 @@ function Events({ title }) {
   };
 
   return (
-    <div className="DriverHome">
-      <div className="Drivercontainer">
+    <div className="LearnHome">
+      <div className="Learncontainer">
         <div className="MainContent">
-          <div className="DriverHeading">
-            <p>Upcoming Events</p>
+          <div className="LearnHeading">
+            <p>Gadgets</p>
           </div>
-          <div className="DriverHeading">
-            <p>Past Events</p>
+          <div className="LearnHeading">
+            <p>Good Farming Practices</p>
           </div>
         </div>
-        <div className="Eventsidebar"></div>
+        <div className="Learnidebar"></div>
       </div>
     </div>
   );
 }
 
-export default Events;
+export default Learn;

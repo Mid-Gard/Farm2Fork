@@ -11,7 +11,7 @@ import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
 
-import "./Team.css";
+import "./News.css";
 
 function Team({ title }) {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -30,7 +30,7 @@ function Team({ title }) {
       <div className="Teamcontainer">
         <div className="MainContent">
           <div className="TeamHeading">
-            <p> Team 2023</p>
+            <p>News and Schemes</p>
           </div>
           <div className="Team-container">
           </div>
