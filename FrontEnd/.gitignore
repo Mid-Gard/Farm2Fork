@@ -12,6 +12,8 @@ lerna-debug.log*
 /.pnp
 .pnp.js
 
+AYNA-main/
+
 ./MyReadme.md
 
 # testing
